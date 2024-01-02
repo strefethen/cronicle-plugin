@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "pixl-json-stream": "^1.0.9"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6"
+  }
+}

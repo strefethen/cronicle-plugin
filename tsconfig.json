@@ -1,0 +1,43 @@
+{
+    "compilerOptions": {
+        "target": "es2022",
+        "outDir": "build",
+        "module": "commonjs",
+        "noImplicitAny": false,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "baseUrl": ".",
+        "sourceMap": true,
+        "typeRoots": [
+            "./node_modules/@types"
+        ],
+        "types": [
+            "node",
+        ],
+        "lib": [
+          "dom",
+          "es2022"
+        ],
+        "paths": {
+            "*": [
+                "node_modules/*",
+                "src/types/*"
+            ]
+        },
+    },
+    "include": [
+        "./**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "build",
+        ".git",
+        ".vcode"
+    ],
+    "typedocOptions": {
+        "entryPoints": [
+            "src/*.ts"
+        ],
+        "out": "docs"
+    }    
+}
