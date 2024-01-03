@@ -1,4 +1,8 @@
 {
+  "name": "cronicle-plugin",
+  "version": "0.1.0",
+  "main": "src/pluginShell.js",
+  "license": "MIT", 
   "dependencies": {
     "pixl-json-stream": "^1.0.9"
   },
