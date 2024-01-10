@@ -23,3 +23,23 @@ You can read more in the [Cronicle plugin](https://github.com/jhuckaby/Cronicle/
 2. Specify your plugin under Chain Option > Run Event on Success.
 
 Your plugin will receive the fetched output via the "job" JSON object which will have a "chain_data" property containing the data. This is great for API calls as the data comes through as a native JSON object.
+
+When using the HTTP Request plugin the structure of the "chain_data" object will be as follows:
+
+```json
+{ "job":
+  ...
+  "chain_data": {
+      "headers": {
+        "date": "Wed, 10 Jan 2024 05:01:01 GMT",
+        "content-type": "application/json",
+        "content-length": "144544",
+        "connection": "keep-alive",
+        ...
+      },
+      "json": {
+        ...
+      }
+  }
+}
+```
